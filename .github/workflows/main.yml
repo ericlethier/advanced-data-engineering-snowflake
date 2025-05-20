@@ -54,7 +54,7 @@ jobs:
       
       # Add CLI to path
       - name: Add CLI to path
-        run: pipx ensurepath
+        run: pipx ensurepath --force
 
       # Fetch latest changes from the repository to Snowflake
       - name: Fetch latest changes to Snowflake
