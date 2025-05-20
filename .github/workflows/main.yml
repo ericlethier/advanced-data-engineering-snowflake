@@ -51,6 +51,10 @@ jobs:
         with:
           cli-version: "latest"
           default-config-file-path: "config.toml"
+      
+      # Add CLI to path
+      - name: Add CLI to path
+        run: pipx ensurepath
 
       # Fetch latest changes from the repository to Snowflake
       - name: Fetch latest changes to Snowflake
